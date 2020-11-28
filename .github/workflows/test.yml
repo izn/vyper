@@ -112,6 +112,14 @@ jobs:
       with:
         python-version: 3.9
 
+    - name: Install Rustup
+      run: apt install rustup
+
+    - name: Use nightly Rust version
+      run:
+        - rustup toolchain install nightly
+        - rustup default nightly
+
     - name: Install Tox
       run: pip install tox
 
