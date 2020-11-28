@@ -113,7 +113,7 @@ jobs:
         python-version: 3.9
 
     - name: Install Rustup
-      run: apt install rustup
+      run: sudo apt-get install rustup
 
     - name: Use nightly Rust version
       run: rustup toolchain install nightly && \
