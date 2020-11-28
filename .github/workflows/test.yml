@@ -113,7 +113,7 @@ jobs:
         python-version: 3.9
 
     - name: Install Rustup
-      run: sudo snap install rustup
+      run: sudo snap install rustup --classic
 
     - name: Use nightly Rust version
       run: rustup toolchain install nightly && \
