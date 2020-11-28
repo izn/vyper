@@ -116,9 +116,8 @@ jobs:
       run: apt install rustup
 
     - name: Use nightly Rust version
-      run:
-        - rustup toolchain install nightly
-        - rustup default nightly
+      run: rustup toolchain install nightly && \
+        rustup default nightly
 
     - name: Install Tox
       run: pip install tox
